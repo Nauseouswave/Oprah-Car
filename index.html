@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chris and Nauseous Cars!</title>
+
+    <style>
+        /* Basic CSS comment */
+        body {
+            background: grey;
+            color: white;
+            width: 960px;
+            margin: 0 auto;
+            font-size: 30px;
+            color: black;
+        }
+
+        h1 {
+            font-size: 80px;
+            color: #333;
+            text-align: center;
+        }
+
+        img {
+            border: 5px solid rgb(0, 102, 255);
+            border-radius: 5px;
+        }
+    </style>
+
+    <script>
+        /*This is an event*/
+        /*alert("I'm Annoying!"); */
+
+        var username = prompt("What is your name?");
+        var car = new Array("BMW", "Audi", "Mercedes", "GMC");
+        var randomCar = Math.floor(Math.random() * car.length);
+        var carImg = new Array("BMW.jfif", "AUDI.jpg", "MERCEDES.webp", "GMC.webp");
+        username = username.toLowerCase();
+
+        if (username === "nauseouswave" || username === "chris") {
+            document.write("<h1>Hello " + username + " you won a " + car[randomCar] + "!</h1>");
+            document.write('<img src=imgs/' + carImg[randomCar] + ' style = "width: 960px; height: 540px; " > ');
+        } else {
+            document.write("<h1>Welcome " + username + "!</h1>");
+        };
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <img src="Oprah.jpg" alt="" style="width: 960px; height: 540px;">
+</body>
+
+</html>
